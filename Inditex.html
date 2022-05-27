@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <style>
+      
+    *{
+      box-sizing: border-box;
+      margin: 0%;
+      padding: 0%;
+    }
+    
+    html{
+      height: 100%;
+    }
+    
+    body{
+      font-family:'Chiller,Brush Script MT',Harrington;
+      font-size: 1.2rem;
+      min-height: 100%;
+    }
+    
+    
+    .grid-container>*{
+      box-shadow: -1px 1px 7px 0px rgba (0,0,0,0.75);
+      border-radius: 85px;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .header{
+      grid-area:header;
+      background: #AA076B;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #af0c71, #941392);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #b9157a, #941392); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+    }
+
+    .navbar{
+      grid-area: navbar;
+      background: #fcc2e2;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #BB377D, #fcc2e2);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #BB377D, #fcc2e2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+    }
+    
+    .main{
+      grid-area: main;
+      background: #fcc2e2;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #fcc2e2, #BB377D);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #fcc2e2, #BB377D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+    }
+    
+    .sidebar{
+      grid-area: sidebar;
+      background: #fcc2e2;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #BB377D, #fcc2e2);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #BB377D, #fcc2e2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+    }
+    
+    .footer{
+      grid-area: footer;
+      background: #B24592;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #F15F79, #B24592);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #F15F79, #B24592); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+    }
+    
+    .grid-container{
+      display: grid;
+      gap: 10px;
+      grid-template-areas: "header"
+      "navbar"
+      "main"
+      "sidebar"
+      "footer";
+    }
+    
+    @media(min-width:400px){
+      .grid-container{
+        grid-template:
+        "header header"100px
+        "navbar navbar"50px
+        "sidebar main"auto
+        "footer footer"100px/
+        200px auto;
+      }
+    }
+    
+    @media(min-width:600px){
+      .grid-container{
+        grid-template: 
+        "header header"
+        "navbar navbar"
+        "sidebar main"
+        "footer footer";
+      }
+    }
+    
+    @media(min-width:900px){
+      .grid-container{
+        grid-template: 
+        "header header header"100px
+        "navbar main sidebar"auto
+        "footer footer footer"100px/
+        200px auto;
+      }
+    }
+  </style>
+</head>
+<body class="grid-container">
+    
+  <header class="header">
+      <H1>Adriana Jimenez Rodriguez</H1>
+      <P><RFC>JIRA860823V25</RFC></P>
+      <CURP>JIRA860823MDFMDD01</CURP>
+     
+  </header>
+  
+  <nav class="navbar">
+ 
+    <br><id="Conocimiento"><h3>Conocimientos</h3> 
+         <BR><li>Paquete Office</li>
+          <p>Word</p>
+          <p>Excell</li></BR>
+       
+          <br><li>Paquetes contables</li>
+          <p>COI</p>
+          <p>SAE</p>
+          <p>INTELISIS</p>
+        
+  </nav>
+
+  <aside class="sidebar"><h3>Experiencia</h3>
+  <br><LI>DYSFARMA</LI>
+  <p>Auxiliar Administrativo</P>
+  <P>2020 A 2021</P></Br>
+  <br><li>BESCO</li> 
+  <p>Auxiliar Tesoreria</p>
+  <p>2016 a 2020</P></Br>
+  <br><li>ADMON LAPS</li>
+  <p>Auxiliar Tesoreria</P>
+  <p>2013 A 2016</p></Br>
+  
+    </aside>
+
+  <article class="main"><h3>Escolaridad</h3>
+    
+    <Br><li>Instituto Tecnologico Gustavo A Madero</li>
+      <p>Ing.Tecnologias de la Informacion y Comunicaciones</p>
+      <p>Primer semestre</p></Br>
+    </Br><li>Conalep num 13</li>
+      <P>Profesional tecnico en contaduria</P>
+      <p>Titulado</p></Br>
+
+      <h3>Acerca de mi</h3>
+    <br><p>me considero una persona responsable, honesta, sencilla y amable, me gusta todo tipo de musica  </p>
+
+</article>
+
+  <footer class="footer"><h3>Contacto</h3>
+  <div class="note">
+    <p><strong>Correo:</strong>:   asist.adri@gmail.com </p>
+    <div class="note">
+      <p><strong>Tel.:</strong>:   55-7434-9244 </p>
+      
+  </footer>
+</body>
+</html>
